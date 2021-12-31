@@ -1,5 +1,5 @@
 from fabric.contrib.files import exists
-from fabric.operations import run, sudo
+from fabric.operations import sudo
 
 
 def self_signed0(*args, **kwargs):
