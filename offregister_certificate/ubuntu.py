@@ -5,7 +5,9 @@ from fabric.operations import sudo
 def self_signed0(*args, **kwargs):
     run_cmd = sudo  # if kwargs.get('use_sudo') else run
 
-    if exists(kwargs["SSL_KEYOUT"]) or exists(kwargs["SSL_CERTOUT"]):
+    if exists(c, runner=c.run, path=kwargs["SSL_KEYOUT"]) or exists(
+        c, runner=c.run, path=kwargs["SSL_CERTOUT"]
+    ):
         return "certs already exist; delete/rename to regenerate"
 
     # ${VAR%/*}

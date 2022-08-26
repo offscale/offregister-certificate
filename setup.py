@@ -28,7 +28,7 @@ if __name__ == "__main__":
         name=package_name,
         author=__author__,
         version=__version__,
-        install_requires=["pyyaml", "fab-classic"],
+        install_requires=["pyyaml", "fabric2"],
         test_suite=package_name + ".tests",
         packages=find_packages(),
         package_dir={package_name: package_name},
