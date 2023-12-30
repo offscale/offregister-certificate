@@ -2,7 +2,7 @@ from fabric.contrib.files import exists
 from fabric.operations import sudo
 
 
-def self_signed0(*args, **kwargs):
+def self_signed0(c, *args, **kwargs):
     run_cmd = sudo  # if kwargs.get('use_sudo') else run
 
     if exists(c, runner=c.run, path=kwargs["SSL_KEYOUT"]) or exists(
