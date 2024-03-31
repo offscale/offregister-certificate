@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from fabric.contrib.files import exists
 from fabric.operations import sudo
 
